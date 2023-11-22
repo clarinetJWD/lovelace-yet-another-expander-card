@@ -28,7 +28,7 @@ jobs:
       - name: Setup NodeJs
         uses: actions/setup-node@v3
         with:
-          node-version: '17'
+          node-version: '18'
           cache: 'npm'
           cache-dependency-path: '**/package-lock.json'
 
@@ -51,6 +51,6 @@ jobs:
           target_commitish: "main"
           draft: false
           prerelease: false
-          files: public/expander-card.js
+          files: public/yet-another-expander-card.js
           generate_release_notes: true
        
