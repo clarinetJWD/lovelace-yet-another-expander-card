@@ -10,7 +10,7 @@ const production = !process.env.ROLLUP_WATCH;
 
 const MAIN_COMPONENT_NAME = "ExpanderCard";
 const MAIN_COMPONENT_REGEX = /ExpanderCard\.svelte$/;
-const TAG_NAME = production ? "expander-card" : "expander-card-dev";
+const TAG_NAME = production ? "yet-another-expander-card" : "expander-card-dev";
 const CONTAINER_TAG_NAME = production ? "expander-child-card" : "expander-child-card-dev";
 const FILE_NAME = `${TAG_NAME}.js`;
 

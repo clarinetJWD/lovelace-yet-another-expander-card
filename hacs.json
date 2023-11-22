@@ -1,6 +1,6 @@
 {
-    "name": "lovelace-yet-another-expanding-card",
+    "name": "lovelace-yet-another-expander-card",
     "content_in_root": false,
     "render_readme": true,
-    "filename": "expanding-card.js"
+    "filename": "expander-card.js"
 }
