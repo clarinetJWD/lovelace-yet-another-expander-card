@@ -1,6 +1,6 @@
 {
-    "name": "lovelace-expander-card",
-    "version": "0.0.1",
+    "name": "expanding-collapsing-card",
+    "version": "1.0.0",
     "watch": {
         "buildAndStart": {
             "patterns": [
