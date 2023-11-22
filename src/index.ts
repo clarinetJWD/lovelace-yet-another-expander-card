@@ -27,7 +27,7 @@ declare global {
 }
 
 const version = 'versionStr';
-console.info(`ExpandingCollapsingCard Version: ${version}`);
+console.info(`ExpanderCard Version: ${version}`);
 
 const devMode = ('devModeValue' as string) === 'true';
 
@@ -35,7 +35,7 @@ window.customCards = window.customCards || [];
 window.customCards.push(...[
     {
         type: 'tag-name',
-        name: `ExpandingCollapsingCard${devMode ? '-dev' : ''}`,
+        name: `Expander Card${devMode ? '-dev' : ''}`,
         preview: true,
         description: 'Expander card'
     }

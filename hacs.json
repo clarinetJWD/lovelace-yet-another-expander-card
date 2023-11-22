@@ -1,6 +1,6 @@
 {
-    "name": "expanding-collapsing-card",
+    "name": "expander-card",
     "content_in_root": false,
     "render_readme": true,
-    "filename": "expanding-collapsing-card.js"
+    "filename": "expander-card.js"
 }
