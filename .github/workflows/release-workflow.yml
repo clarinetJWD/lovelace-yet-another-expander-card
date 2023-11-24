@@ -35,8 +35,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Set app version (Unix)
-        run: npm version ${{ github.event.inputs.release_version }} --no-git-tag-version
+   #   - namer: Set app version (Unix)
+      #  run: npm version ${{ github.event.inputs.release_version }} --no-git-tag-version
 
       - name: Build Project
         run: npm run build
