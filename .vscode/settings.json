@@ -1,0 +1,5 @@
+{
+    "vscode-home-assistant.hostUrl": "${{ secrets.VSCODE_HOST_URL }}",
+    "vscode-home-assistant.ignoreCertificates": true,
+    "vscode-home-assistant.longLivedAccessToken": "${{ secrets.LONG_LIVED_ACCESS_TOKEN }}"
+}
