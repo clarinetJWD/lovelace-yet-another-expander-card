@@ -62,30 +62,30 @@ Yaml:
 
 Add this repository via HACS Custom repositories
 
-https://github.com/Alia5/lovelace-expander-card
+`https://github.com/spencermamer/lovelace-yet-another-expander-card`
 
 ([How to add Custom Repositories](https://hacs.xyz/docs/faq/custom_repositories/))
 
 ### Manual
 #### 1. Download the card
 
-Install the `expander-card` card by copying `expander-card.js` to `<config directory>/www/expander-card.js`
+Install the `yet-another-expander-card` card by copying `yet-another-expander-card.js` to `<config directory>/www/yet-another-expander-card.js`
 
 Bash:
 
 ```bash
-wget https://github.com/Alia5/lovelace-expander-card/releases/download/latest/expander-card.js
-mv expander-card.js /config/www/
+wget https://github.com/spencermamer/lovelace-yet-another-expander-card/releases/download/latest/yet-another-expander-card.js
+mv yet-another-expander-card.js /config/www/
 ```
 
 #### 2. Link the card to your lovelace ui
 
 ##### The manual way:
 
-Link `expander-card` inside your `ui-lovelace.yaml`
+Link `yet-another-expander-card` inside your `ui-lovelace.yaml`
 
 ```yaml
 resources:
-  - url: /local/expander-card.js
+  - url: /local/lovelace-yet-another-expander-card.js
     type: js
 ```
