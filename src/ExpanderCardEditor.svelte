@@ -43,7 +43,7 @@ limitations under the License.
             label: 'Title Font Size'
         }],
         'button-text': ['string', {
-            label: 'Button Text (Optional, not displayed if using Title-Card)'
+            label: 'Button Text (Not displayed if using Title-Card)'
         }],
         'button-text-font-size': ['string', {
             label: 'Button Text Font Size'
