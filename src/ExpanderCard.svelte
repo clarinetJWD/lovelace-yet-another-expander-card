@@ -98,9 +98,9 @@
             on:click={() => {
                 expanded = !expanded;
             }}
-            style="--button-background:{config['button-background']};"
+            style="--button-background:{config['button-background']}; --title-font-size:{config['title-font-size']}"
         >
-            <div class="primary title" style="--title-font-size:{config['title-font-size']}">{config.title}</div>
+            <div class="primary title">{config.title}</div>
             <div class="secondary button-text">{config['button-text']}</div>
             <ha-icon icon="mdi:chevron-down" class={` primaryico ${expanded ? 'flipped' : ''}`} />
         </button>
