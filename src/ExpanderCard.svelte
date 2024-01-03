@@ -128,6 +128,7 @@
         gap: var(--expander-card-gap);
         padding: var(--expander-card-padding);
         transition: all 0.3s ease-in-out;
+        background: var(--ha-card-background,var(--card-background-color,#fff));
     }
     .children-container {
         padding: var(--expander-card-child-padding);
@@ -136,6 +137,7 @@
         transition: all 0.3s ease-in-out;
     }
     .clear {
+        background: none;
         background-color: transparent;
         border-style: none;
     }
