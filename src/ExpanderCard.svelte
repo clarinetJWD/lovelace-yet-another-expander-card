@@ -167,6 +167,8 @@
     }
     .secondary {
         font-size: var(--expander-card-button-text-font-size);
+        text-align: right;
+        width: 100%;
     }
     .header-overlay {
         position: absolute;
