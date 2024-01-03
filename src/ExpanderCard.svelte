@@ -74,15 +74,15 @@
 
 <ha-card
     class={`expander-card ${config.clear ? 'clear' : ''}`}
-    style="--gap:{config.gap}; --padding:{config.padding}"
+    style="--expander-card-gap:{config.gap}; --expander-card-padding:{config.padding}"
 >
     {#if config['title-card']}
         <div class={`title-card-header${config['title-card-button-overlay'] ? '-overlay' : ''}`}>
-            <div class="title-card-container" style="--title-padding:{config['title-card-padding']}">
+            <div class="title-card-container" style="--expander-card-title-padding:{config['title-card-padding']}">
                 <Card {hass} config={config['title-card']} type={config['title-card'].type} />
             </div>
             <button
-                style="--overlay-margin:{config['overlay-margin']}; --button-background:{config[
+                style="--expander-card-overlay-margin:{config['overlay-margin']}; --expander-card-button-background:{config[
                     'button-background'
                 ]};"
                 class={`header ripple ${config['title-card-button-overlay'] ? 'header-overlay' : ''}`}
@@ -99,7 +99,7 @@
             on:click={() => {
                 expanded = !expanded;
             }}
-            style="--button-background:{config['button-background']}; --title-font-size:{config['title-font-size']}; --button-text-font-size:{config['button-text-font-size']};"
+            style="--expander-card-button-background:{config['button-background']}; --expander-card-title-font-size:{config['title-font-size']}; --expander-card-button-text-font-size:{config['button-text-font-size']};"
         >
             <div class="primary title">{config.title}</div>
             <div class="secondary button-text">{config['button-text']}</div>
@@ -107,7 +107,7 @@
         </button>
     {/if}
     {#if config.cards && expanded}
-        <div style="--gap:{config.gap}; --child-padding:{config['child-padding']}" class="children-container">
+        <div style="--expander-card-gap:{config.gap}; --expander-card-child-padding:{config['child-padding']}" class="children-container">
             {#each config.cards as card (card)}
                 <div class="child-card" animate:flip={{ delay: 250, duration: 250, easing: quintOut }}>
                     <div
@@ -125,14 +125,14 @@
 <style>
     .expander-card {
         display: grid;
-        gap: var(--gap);
-        padding: var(--padding);
+        gap: var(--expander-card-gap);
+        padding: var(--expander-card-padding);
         transition: all 0.3s ease-in-out;
     }
     .children-container {
-        padding: var(--child-padding);
+        padding: var(--expander-card-child-padding);
         display: grid;
-        gap: var(--gap);
+        gap: var(--expander-card-gap);
         transition: all 0.3s ease-in-out;
     }
     .clear {
@@ -150,7 +150,7 @@
     }
     .title-card-container {
         width: 100%;
-        padding: var(--title-padding);
+        padding: var(--expander-card-title-padding);
     }
     .header {
         display: flex;
@@ -158,20 +158,21 @@
         align-items: center;
         padding: 0.8em 0.8em;
         margin: 2px;
-        background: var(--button-background);
+        background: var(--expander-card-button-background);
         border-style: none;
+        color: var(--primary-text-color);
     }
     .primary {
-        font-size: var(--title-font-size);
+        font-size: var(--expander-card-title-font-size);
     }
     .secondary {
-        font-size: var(--button-text-font-size);
+        font-size: var(--expander-card-button-text-font-size);
     }
     .header-overlay {
         position: absolute;
         top: 0;
         right: 0;
-        margin: var(--overlay-margin);
+        margin: var(--expander-card-overlay-margin);
     }
     .title {
         width: 100%;
