@@ -80,9 +80,7 @@
                 <Card {hass} config={config['title-card']} type={config['title-card'].type} />
             </div>
             <button
-                style="--expander-card-overlay-margin:{config['overlay-margin']}; --expander-card-button-background:{config[
-                    'button-background'
-                ]};"
+                style={`--expander-card-overlay-margin:{config['overlay-margin']}; --expander-card-button-background:{config['button-background']};`}
                 class={`header ripple ${config['title-card-button-overlay'] ? 'header-overlay' : ''}`}
                 on:click={() => {
                     expanded = !expanded;
