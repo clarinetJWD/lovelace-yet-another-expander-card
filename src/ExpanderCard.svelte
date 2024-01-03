@@ -29,6 +29,7 @@
         'padding': '1em',
         'clear': false,
         'title': 'Expander',
+        'title-font-size': 'var(--ha-card-header-font-size, 1em)',
         'button-text': '',
         'overlay-margin': '2em',
         'child-padding': '0.5em',
@@ -99,7 +100,7 @@
             }}
             style="--button-background:{config['button-background']};"
         >
-            <div class="primary title">{config.title}</div>
+            <div class="primary title" style="--title-font-size:{config['title-font-size']}">{config.title}</div>
             <div class="secondary button-text">{config['button-text']}</div>
             <ha-icon icon="mdi:chevron-down" class={` primaryico ${expanded ? 'flipped' : ''}`} />
         </button>
@@ -158,6 +159,7 @@
         margin: 2px;
         background: var(--button-background);
         border-style: none;
+        font-size: var(--title-font-size);
     }
     .header-overlay {
         position: absolute;

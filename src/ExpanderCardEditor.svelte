@@ -39,6 +39,9 @@ limitations under the License.
         'title': ['string', {
             label: 'Title (Not displayed if using Title-Card)'
         }],
+        'title-font-size': ['string', {
+            label: 'Title Font Size'
+        }],
         'button-text': ['string', {
             label: 'Button Text (Optional, not displayed if using Title-Card)'
         }],
