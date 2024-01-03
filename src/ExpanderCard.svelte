@@ -73,7 +73,7 @@
 </script>
 
 <ha-card
-    class={`expander-card ${config.clear ? 'clear' : ''}`}
+    class={`expander-card ${config.clear ? 'clear' : ''} wut`}
     style="--expander-card-gap:{config.gap}; --expander-card-padding:{config.padding}"
 >
     {#if config['title-card']}
