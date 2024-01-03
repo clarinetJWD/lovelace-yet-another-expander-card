@@ -29,7 +29,7 @@
         'padding': '1em',
         'clear': false,
         'title': '',
-        'title-font-size': 'var(--paper-font-button_-_font-size, 1em)',
+        'title-font-size': '',
         'button-text': '',
         'button-text-font-size': 'var(--paper-font-button_-_font-size, 1em)',
         'overlay-margin': '2em',
@@ -40,7 +40,7 @@
     let config: ExpanderConfig = defaults;
 
     // Home Assistant will call this with the config object!
-    // leave export let otherwise hass wil thro errors....
+    // leave export let otherwise hass will throw errors....
     // eslint-disable-next-line svelte/no-unused-svelte-ignore
     // svelte-ignore unused-export-let
     export let setConfig = (conf = {}) => {
@@ -99,7 +99,7 @@
             on:click={() => {
                 expanded = !expanded;
             }}
-            style="--expander-card-button-background:{config['button-background']}; --expander-card-title-font-size:{config['title-font-size']}; --expander-card-button-text-font-size:{config['button-text-font-size']};"
+            style={`--expander-card-button-background:{config['button-background']}; --expander-card-title-font-size:${config['title-font-size'] == '' ? 'var(--paper-font-button_-_font-size, 1em)' : config['title-font-size']}; --expander-card-button-text-font-size:{config['button-text-font-size']};`}
         >
             <div class="primary title">{config.title}</div>
             <div class="secondary button-text">{config['button-text']}</div>
