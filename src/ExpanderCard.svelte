@@ -73,7 +73,7 @@
 </script>
 
 <ha-card
-    class="{`expander-card ${config.clear ? 'clear' : ''}`}"
+    class={`expander-card ${config.clear ? 'clear' : ''}`}
     style="--expander-card-gap:{config.gap}; --expander-card-padding:{config.padding}"
 >
     {#if config['title-card']}
@@ -128,7 +128,7 @@
         gap: var(--expander-card-gap);
         padding: var(--expander-card-padding);
         transition: all 0.3s ease-in-out;
-        background: var(--ha-card-background,var(--card-background-color,#fff));
+        background: var(--ha-card-background,var(--card-background-color,#fff)) !important;
     }
     .children-container {
         padding: var(--expander-card-child-padding);
