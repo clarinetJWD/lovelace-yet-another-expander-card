@@ -80,7 +80,7 @@
                 <Card {hass} config={config['title-card']} type={config['title-card'].type} />
             </div>
             <button
-                style={`--expander-card-overlay-margin:{config['overlay-margin']}; --expander-card-button-background:{config['button-background']};`}
+                style={`--expander-card-overlay-margin:${config['overlay-margin']}; --expander-card-button-background:${config['button-background']};`}
                 class={`header ripple ${config['title-card-button-overlay'] ? 'header-overlay' : ''}`}
                 on:click={() => {
                     expanded = !expanded;
@@ -95,7 +95,7 @@
             on:click={() => {
                 expanded = !expanded;
             }}
-            style={`--expander-card-button-background:{config['button-background']}; --expander-card-title-font-size:${config['title-font-size'] == '' ? 'var(--paper-font-button_-_font-size, 1em)' : config['title-font-size']}; --expander-card-button-text-font-size:${config['button-text-font-size'] == '' ? 'var(--paper-font-button_-_font-size, 1em)' : config['button-text-font-size']};`}
+            style={`--expander-card-button-background:${config['button-background']}; --expander-card-title-font-size:${config['title-font-size'] == '' ? 'var(--paper-font-button_-_font-size, 1em)' : config['title-font-size']}; --expander-card-button-text-font-size:${config['button-text-font-size'] == '' ? 'var(--paper-font-button_-_font-size, 1em)' : config['button-text-font-size']};`}
         >
             <div class="primary title">{config.title}</div>
             <div class="secondary button-text">{config['button-text']}</div>
