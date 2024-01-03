@@ -44,7 +44,9 @@ Yaml:
 | ------------------------- | -------- | ------------- | ---------------------- | ---------------------------------------------------------------------------- |
 | type                      | string   | **Required**  | `custom:expander-card` | Type of the card.                                                            |
 | title                     | string   | _Expander_    | *                      | Title (Not displayed if using Title-Card)                                    |
+| title-font-size           | string   | _1em_         | css-font-size          | The font size of the title text.                                             |
 | button-text               | string   | **optional**  | *                      | The text next to the button, if desired (Not displayed if using Title-Card)  |
+| button-text-font-size     | string   | _1em_         | css-font-size          | The font size of the button text.                                            |
 | clear                     | boolean  | _false_       | true\|false            | Remove Background                                                            |
 | expanded                  | boolean  | _false_       | true\|false            | Start expanded                                                               |
 | button-background         | string   | _transparent_ | css-color              | Background color of expand button                                            |
