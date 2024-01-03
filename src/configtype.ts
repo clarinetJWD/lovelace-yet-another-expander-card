@@ -20,6 +20,7 @@ export interface ExpanderConfig {
     title: string;
     'title-font-size'?: string;
     'button-text'?: string;
+    'button-text-font-size'?: string;
     'title-card'?: LovelaceCardConfig;
     'title-card-padding'?: string;
     'title-card-button-overlay'?: false;

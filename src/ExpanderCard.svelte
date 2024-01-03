@@ -31,6 +31,7 @@
         'title': 'Expander',
         'title-font-size': 'var(--ha-card-header-font-size, 1em)',
         'button-text': '',
+        'button-text-font-size': 'var(--paper-font-button_-_font-size, 1em)',
         'overlay-margin': '2em',
         'child-padding': '0.5em',
         'button-background': 'transparent'
@@ -98,7 +99,7 @@
             on:click={() => {
                 expanded = !expanded;
             }}
-            style="--button-background:{config['button-background']}; --title-font-size:{config['title-font-size']}"
+            style="--button-background:{config['button-background']}; --title-font-size:{config['title-font-size']}; --button-text-font-size:{config['button-text-font-size']};"
         >
             <div class="primary title">{config.title}</div>
             <div class="secondary button-text">{config['button-text']}</div>
@@ -159,7 +160,12 @@
         margin: 2px;
         background: var(--button-background);
         border-style: none;
+    }
+    .primary {
         font-size: var(--title-font-size);
+    }
+    .secondary {
+        font-size: var(--button-text-font-size);
     }
     .header-overlay {
         position: absolute;

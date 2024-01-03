@@ -45,6 +45,9 @@ limitations under the License.
         'button-text': ['string', {
             label: 'Button Text (Optional, not displayed if using Title-Card)'
         }],
+        'button-text-font-size': ['string', {
+            label: 'Button Text Font Size'
+        }],
         'clear': ['boolean', {
             label: 'Remove background'
         }],
