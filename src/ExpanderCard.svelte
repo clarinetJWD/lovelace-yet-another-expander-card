@@ -133,9 +133,9 @@
         transition: all 0.3s ease-in-out;
     }
     .clear {
-        background: none;
-        background-color: transparent;
-        border-style: none;
+        background: none !important;
+        background-color: transparent !important;
+        border-style: none !important;
     }
     .title-card-header {
         display: flex;
