@@ -28,6 +28,8 @@
         'gap': '0.6em',
         'padding': '1em',
         'clear': false,
+        'title': '',
+        'button-text': '',
         'overlay-margin': '2em',
         'child-padding': '0.5em',
         'button-background': 'transparent'

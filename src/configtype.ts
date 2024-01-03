@@ -17,7 +17,7 @@ export interface ExpanderConfig {
     cards?: { type: string }[];
     gap: string;
     padding: string;
-    title: string;
+    title?: string;
     'title-font-size'?: string;
     'button-text'?: string;
     'button-text-font-size'?: string;
