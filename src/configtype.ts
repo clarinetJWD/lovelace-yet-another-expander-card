@@ -18,6 +18,7 @@ export interface ExpanderConfig {
     gap: string;
     padding: string;
     title: string;
+    'button-text'?: string;
     'title-card'?: LovelaceCardConfig;
     'title-card-padding'?: string;
     'title-card-button-overlay'?: false;

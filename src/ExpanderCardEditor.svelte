@@ -39,6 +39,9 @@ limitations under the License.
         'title': ['string', {
             label: 'Title (Not displayed if using Title-Card)'
         }],
+        'button-text': ['string', {
+            label: 'Button Text (Optional, not displayed if using Title-Card)'
+        }],
         'clear': ['boolean', {
             label: 'Remove background'
         }],

@@ -29,6 +29,7 @@
         'padding': '1em',
         'clear': false,
         'title': 'Expander',
+        'button-text': '',
         'overlay-margin': '2em',
         'child-padding': '0.5em',
         'button-background': 'transparent'
@@ -99,6 +100,7 @@
             style="--button-background:{config['button-background']};"
         >
             <div class="primary title">{config.title}</div>
+            <div class="secondary button-text">{config['button-text']}</div>
             <ha-icon icon="mdi:chevron-down" class={` primaryico ${expanded ? 'flipped' : ''}`} />
         </button>
     {/if}
