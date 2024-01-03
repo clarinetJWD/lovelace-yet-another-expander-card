@@ -36,7 +36,7 @@ Clear Background (default theme):
 **Graphical config supported**
 
 ![Sample editor](examples/editor.png)
-
+ 
 
 Yaml:
 
