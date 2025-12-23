@@ -160,13 +160,13 @@ limitations under the License.
 
 <paper-tabs scrollable selected={selectedTab} on:iron-activate={onTabClicked}>
     <paper-tab class={`${selectedTab === 0 ? 'tab-selected' : ''}`}> Layout </paper-tab>
-    <paper-tab class={`${selectedTab !== 0 ? 'tab-selected' : ''}`}> Cards </paper-tab>
+    <paper-tab class={`${selectedTab === 1 ? 'tab-selected' : ''}`}> Cards </paper-tab>
 </paper-tabs>
 
 {#if selectedTab === 0}
     <form class="content" on:input={valueChanged}>
         <!-- eslint-disable-next-line @typescript-eslint/no-unused-vars -->
-        {#each Object.entries(configuratorElements) as [key, [type, extra]] (key)}
+        {#each Object.entries(configuratorElements).filter(([key]) => key !== 'cards') as [key, [type, extra]] (key)}
             {#if type === 'boolean' && (!extra?.cond || extra?.cond(config))}
                 <ha-formfield label={extra?.label || key}>
                     <ha-switch
